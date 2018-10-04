@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context=".login.ui.SplashActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_expected_date_childbirth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_middle"
+            android:textColor="@color/text_color"
+            android:layout_marginLeft="15dp"
+            android:text="@string/expected_date_childbirth"/>
+
+        <TextView
+            android:id="@+id/tv_expected_date_childbirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_middle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/text_color"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_expected_date_childbirth1"
+        android:layout_below="@+id/ll_expected_date_childbirth"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/rili" />
+
+        <TextView
+            android:id="@+id/tv_calculation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="@string/calculation"
+            android:textColor="@color/style_red"
+            android:textSize="@dimen/text_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_last_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ll_expected_date_childbirth1"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/text_color"
+            android:layout_marginLeft="15dp"
+            android:text="@string/last_menstruation_date"/>
+
+        <TextView
+            android:id="@+id/tv_menstruation_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="right"
+            android:textColor="@color/text_color"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_menstruation_cycle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/ll_last_date"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/text_color"
+            android:layout_marginLeft="15dp"
+            android:text="@string/menstruation_cycle"/>
+
+        <TextView
+            android:id="@+id/tv_menstruation_cycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="right"
+            android:textColor="@color/text_color"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/ll_menstruation_cycle"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        style="@style/submit_btn_style"
+        android:enabled="true"
+        android:text="@string/save" />
+
+    <TextView
+        android:id="@+id/tv_baby_been_born"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:background="@drawable/cancel_btn_bg_shape"
+        android:textColor="@color/style_blue"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="@dimen/text_small"
+        android:enabled="true"
+        android:text="@string/baby_been_born" />
+
+    <LinearLayout
+        android:id="@+id/port_type_wv_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/text_color"/>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/wv_cancel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_small"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="1dp"
+                android:textColor="@color/hint_text_color"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="@string/last_menstruation_date"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_small"/>
+
+            <TextView
+                android:id="@+id/wv_confirm_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_small"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/text_color"/>
+        <include
+            layout="@layout/pickerview_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

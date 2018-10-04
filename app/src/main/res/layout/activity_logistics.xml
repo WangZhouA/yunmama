@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/icon_home03"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/tv_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logistics_company"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/text_color"
+                android:layout_marginRight="3dp"
+                android:textSize="@dimen/text_main"/>
+            <TextView
+                android:id="@+id/tv_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="顺风快递"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/tv_one"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_main"/>
+
+            <TextView
+                android:id="@+id/tv_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logistics_code"
+                android:layout_below="@+id/tv_one"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/text_color"
+                android:layout_marginRight="3dp"
+                android:textSize="@dimen/text_main"/>
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8008208820"
+                android:layout_below="@+id/tv_one"
+                android:layout_toRightOf="@+id/tv_two"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_main"/>
+
+            <TextView
+                android:id="@+id/tv_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logistics_phone"
+                android:layout_below="@+id/tv_two"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/text_color"
+                android:layout_marginRight="3dp"
+                android:textSize="@dimen/text_main"/>
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="95546"
+                android:layout_below="@+id/tv_two"
+                android:layout_toRightOf="@+id/tv_three"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/style_blue"
+                android:textSize="@dimen/text_main"/>
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_process"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

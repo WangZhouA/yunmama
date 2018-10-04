@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.sunday.common.activity.view.NavBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:backgroundColor="@color/white"
+        app:rightTextSize="16dp"
+        app:rightTxtColor="#FFF"
+        app:titleColor="@color/title_text_color"
+        app:titleSize="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="11dp"
+        android:paddingBottom="19dp"
+        android:paddingRight="13dp"
+        android:background="@color/white">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fetal_heart1"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_small"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/unmeasured"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/text_main"/>
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/style_blue"
+            android:layout_gravity="right"
+            android:paddingRight="21dp"
+            android:paddingLeft="21dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:background="@drawable/fourdp_btn_bg_blue_shape"
+            android:textSize="@dimen/text_small"
+            android:text="@string/add"/>
+
+    </LinearLayout>
+</LinearLayout>

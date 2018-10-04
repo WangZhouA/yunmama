@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    tools:context=".login.ui.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="34dp"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/status_bar_color"/>
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/del1"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="怀孕1个月"
+            android:layout_marginBottom="11dp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_middle"/>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="17dp"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_gray_bg">
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dp"
+                    android:layout_height="wrap_content"
+                    android:text="体重、血压、腹围、宫高、血常规、尿常规、白带常规、肝功能"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_small"/>
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_content"
+                    android:layout_alignParentRight="true"
+                    android:text="未登记"
+                    android:textColor="@color/style_blue"
+                    android:textSize="@dimen/text_main"
+                    android:padding="3dp"
+                    android:background="@drawable/fourdp_btn_bg_blue_shape"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_hint_date"
+                android:layout_below="@+id/ll_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_main"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/hint_text_color"
+                android:text="孕检日期："/>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_toRightOf="@+id/tv_hint_date"
+                android:layout_below="@+id/ll_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:text="2018-03-14"
+                android:textSize="@dimen/text_small"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

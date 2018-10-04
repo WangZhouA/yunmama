@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+
+    <LinearLayout
+        android:id="@+id/ll_orders_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_orders_username"
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="朱莉" />
+
+            <TextView
+                android:id="@+id/tv_orders_userphone"
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/tv_orders_username"
+                android:text="13888888888" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/text_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:text="广东省深圳市宝安区西乡、西乡街道宝田1路号购凰雅居2栋" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/list_in" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_orders_info"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_orders"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/freight" />
+
+            <TextView
+                android:id="@+id/tv_freight"
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="21dp"
+                android:text="¥5.00" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:background="#FFEFEFEF" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/real_payment" />
+
+            <TextView
+                android:id="@+id/tv_real_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="21dp"
+                android:text="¥1785.00"
+                android:textColor="@color/style_red"
+                android:textSize="@dimen/text_small" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/tv_orders_delete"
+            style="@style/text_style"
+            android:layout_width="80dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/tv_orders_cancle"
+            android:background="@drawable/fourdp_btn_bg_black_shape"
+            android:gravity="center"
+            android:text="@string/delete_order" />
+
+        <TextView
+            android:id="@+id/tv_orders_cancle"
+            style="@style/text_style"
+            android:layout_width="80dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/tv_place_order"
+            android:background="@drawable/fourdp_btn_bg_black_shape"
+            android:gravity="center"
+            android:text="@string/cancellation_order" />
+
+        <TextView
+            android:id="@+id/tv_place_order"
+            android:layout_width="80dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/fourdp_btn_bg_blue_shape"
+            android:gravity="center"
+            android:text="@string/payment"
+            android:textColor="@color/style_blue"
+            android:textSize="14dp" />
+    </RelativeLayout>
+</RelativeLayout>

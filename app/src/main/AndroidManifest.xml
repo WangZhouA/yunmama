@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saiyi.pregnantmother">
+
+    <!-- 允许程序访问有关GSM网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序连接到已配对的蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 允许程序发现和配对蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 允许程序访问Wi-Fi网络状态信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序改变Wi-Fi连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 请求访问使用照相设备 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 允许访问振动设备 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 写内存权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 系统全局弹出框 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 读内存权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.PMApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".login.ui.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".login.ui.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".login.ui.RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".login.ui.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".login.ui.SelectionTypeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".login.ui.SupplementInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".login.ui.CalculationActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".login.ui.SelectDoctorActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".doctor.ui.ScanDoctorQrActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+
+        <activity
+            android:name=".doctor.ui.DoctorListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".doctor.ui.DoctorInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".my.ui.BabyGrowthCycleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".my.ui.PersonalCenterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".my.ui.AppVersionActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".my.ui.ContactUsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".my.ui.NoticeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".my.ui.OrdersMainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".my.ui.OrdersDeatilsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".my.ui.ChartActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".my.ui.LogisticsAcvtivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.ui.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.ui.AddDeviceAvtivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.ui.school.SchoolActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.ui.school.CourseInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.ui.school.BuyCourseActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.ui.forum.ForumActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.ui.forum.PushPostActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.ui.forum.PostingsInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.lidong.photopicker.PhotoPickerActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/PhotoPickerTheme" />
+        <activity
+            android:name="com.lidong.photopicker.PhotoPreviewActivity"
+            android:theme="@style/PhotoPickerTheme" />
+
+        <activity
+            android:name=".home.ui.shopping.ShoppingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.ui.shopping.GoodsListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.ui.shopping.GoodsInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.ui.shopping.ConfirmationOrderActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.ui.shopping.PaymentSuccessActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.ui.shopping.ShoppingCartAcativity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".home.ui.data.AddFetalHeartActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".device.ui.DeviceMainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".device.ui.HandRingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".device.ui.HeartMeterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".doctor.ui.FindDoctorActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".my.ui.ReNameActivity" />
+        <activity android:name=".my.ui.DueDate" />
+        <activity android:name=".my.ui.photo.PhotoClipActivity" />
+        <activity
+            android:name=".doctor.ui.AddDoctorActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".doctor.ui.MedicalKitsActivity" />
+        <activity android:name=".doctor.ui.ChatActivity" />
+        <activity android:name=".doctor.ui.TuWenZiXunActviity" />
+        <activity android:name=".doctor.ui.MessageActivity" />
+        <activity android:name=".doctor.ui.TiCeActivity" />
+    </application>
+
+</manifest>

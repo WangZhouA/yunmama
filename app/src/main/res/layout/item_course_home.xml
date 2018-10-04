@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="15dp"
+    android:orientation="horizontal"
+    tools:context=".login.ui.SplashActivity">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="120dp"
+        android:layout_height="98dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/test_ad1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="婴儿体验课"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="课程简介"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="免费"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/style_blue"
+            android:textSize="@dimen/text_main" />
+    </LinearLayout>
+
+</LinearLayout>

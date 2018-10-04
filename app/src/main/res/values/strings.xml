@@ -1,0 +1,320 @@
+<resources>
+    <string name="app_name">孕妈妈</string>
+
+    <string name="unknown_error">未知错误</string>
+    <string name="submiting">正在提交</string>
+    <string name="confirm">确定</string>
+    <string name="delete">删除</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="skip">跳过</string>
+    <string name="sbumit">提交</string>
+    <string name="search">搜索</string>
+    <string name="add">添加</string>
+    <string name="date">日期</string>
+    <string name="time">时间</string>
+    <string name="status">状态</string>
+    <string name="normal">正常</string>
+    <string name="abnormal">异常</string>
+    <string name="reply">回复</string>
+    <string name="edit">编辑</string>
+    <string name="done">完成</string>
+
+    <!-- 登录页面 -->
+    <string name="phone_number">手机号</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="go_register">去注册</string>
+    <string name="forgot_pwd1">忘记密码?</string>
+    <string name="input_phone_pwd">请输入手机号或密码</string>
+    <string name="phone_format">手机号格式错误</string>
+    <string name="pwd_number_little">密码必须大于六位</string>
+    <string name="logining">正在登录</string>
+
+    <!-- 注册界面 -->
+    <string name="register">注册</string>
+    <string name="valid_code">验证码</string>
+    <string name="send_valid_code">获取验证码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="count_str">剩余%s秒</string>
+    <string name="sending">正在发送</string>
+    <string name="input_phone_number">请输入手机号</string>
+    <string name="not_valid_code">您尚未获取验证码</string>
+    <string name="valid_code_error">验证码输入有误</string>
+    <string name="input_valid_code">请输入验证码</string>
+    <string name="pwd_inconsistencies">密码输入不一致</string>
+    <string name="registering">正在注册</string>
+
+    <!--  找回密码 -->
+    <string name="back_password">找回密码</string>
+    <string name="back_pwding">正在找回</string>
+    <string name="back_pwd_success">找回成功,请登录</string>
+
+    <!-- 选择当前阶段 -->
+    <string name="selection_type">选择您的当前阶段</string>
+    <string name="pregnant">我怀孕了</string>
+    <string name="spicy_mother">我是辣妈</string>
+    <string name="selection_type_tips">类型选择后不可更改</string>
+
+    <!--  完善资料 -->
+    <string name="supplement_info">完善资料</string>
+    <string name="age">年龄</string>
+    <string name="name">名字</string>
+    <string name="expected_date_childbirth">预产期</string>
+    <string name="receiving_address">收货地址</string>
+    <string name="baby_birthday">宝宝出生日期</string>
+    <string name="calculation"><u>计算预产期</u></string>
+    <string name="input_user_name">请输入用户名</string>
+    <string name="input_date_childbirth">请输入预产期</string>
+    <string name="input_baby_birthday">请输入宝宝出生日期</string>
+
+    <!-- 计算预产期 -->
+    <string name="last_menstruation_date">末次月经开始日期</string>
+    <string name="menstruation_cycle">月经周期</string>
+    <string name="baby_been_born">宝宝已出生</string>
+
+    <!--  选择医生 -->
+    <string name="selection_doctor">选择医生</string>
+    <string name="selection_manual">手动选择</string>
+    <string name="selection_scan_qr">扫码选择</string>
+    <string name="manual">手动</string>
+
+    <!-- 扫码 -->
+    <string name="scan_qr">扫码</string>
+    <string name="scan_qr_doctor">扫码添专属医生</string>
+    <string name="open_camera_permisstion">"请手动打开相机权限"</string>
+
+    <!--  医生 -->
+    <string name="doctor">医生</string>
+    <string name="newborn_pediatrics">新生儿科</string>
+    <string name="gynaecology_obstetrics">妇产科</string>
+    <string name="nutriology_department">营养科</string>
+    <string name="on_line">在线</string>
+    <string name="off_line">离线</string>
+
+    <!-- 医生详细 -->
+    <string name="doctor_info">医生详情</string>
+    <string name="praise">好评:</string>
+    <string name="set_exclusive_doctor">设置为专属医生</string>
+    <string name="inquiries">咨询量:</string>
+    <string name="people">人</string>
+    <string name="Medical_kits">医疗包</string>
+    <string name="Discount_package">优惠包</string>
+    <string name="By_consulting">图文咨询</string>
+    <string name="dh_ZX">电话咨询</string>
+    <string name="Good_at">擅长</string>
+    <string name="Expert_introduction">专家简介</string>
+    <string name="an">展开</string>
+    <string name="msg">消息</string>
+
+    <!-- 宝宝成长页面 -->
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="day1">天</string>
+    <string name="gram">克</string>
+    <string name="mm">mm</string>
+    <string name="distance_birth">距离预产期</string>
+    <string name="baby_h">宝宝身长</string>
+    <string name="baby_w">宝宝体重</string>
+    <string name="current_state">当前状态</string>
+    <string name="baby_growth">现在处于经期第一天，胎宝宝现在分别以精子和卵子形式存
+        在于准爸准和准妈体内。精子每批数量巨大，一般每月只有
+        一个成熟卵子排出，直径约为0.1毫米</string>
+
+    <!-- 主页 -->
+    <string name="home">主页</string>
+    <string name="consultation">咨询</string>
+    <string name="data">数据</string>
+    <string name="my">我的</string>
+    <string name="school">学堂</string>
+    <string name="forum">论坛</string>
+    <string name="shopping_mall">商城</string>
+    <string name="find_doctor">找医生</string>
+    <string name="fetal_heart">测胎心</string>
+    <string name="fetal_heart_meter_bt">胎心仪蓝牙</string>
+    <string name="fetal_heart_meter">胎心仪</string>
+    <string name="water_consumption">记录喝水量</string>
+    <string name="water_cup">智能水杯</string>
+    <string name="weight_measurement">测体重</string>
+    <string name="weighing">体重称</string>
+    <string name="ear_temperature">测耳温</string>
+    <string name="ear_thermometer">耳温计</string>
+    <string name="anti_vomiting">防孕吐</string>
+    <string name="hand_ring_bt">防孕吐手环蓝牙</string>
+    <string name="hand_ring">防孕吐手环</string>
+    <string name="coming_soon">敬请期待</string>
+    <string name="good_lesson">精选好课</string>
+    <string name="hot_topic">热门论题</string>
+    <string name="hot_selling_goods">热卖商品</string>
+    <string name="recommending_music">推荐音乐</string>
+
+    <!-- 课堂 -->
+    <string name="price">价格:</string>
+    <string name="course_name">课程名称:</string>
+    <string name="paid">付费</string>
+    <string name="free">免费</string>
+
+
+    <!--  论坛 -->
+    <string name="push_posting">发布帖子</string>
+    <string name="input_psoting_title">输入一个标题（4－30个字）</string>
+    <string name="input_psoting_content">请输入内容</string>
+    <string name="forum_info">论坛详情</string>
+    <string name="push">发布</string>
+    <string name="not_postings">亲！没有发论坛哦</string>
+    <string name="all_postings">所有内容</string>
+    <string name="my_postings">我发起的</string>
+
+    <!-- 商品 -->
+    <string name="product_detail_sku_quantity">购买数量</string>
+    <string name="purchase_immediately">立即购买</string>
+    <string name="add2cart">加入购物车</string>
+    <string name="freight">运费</string>
+    <string name="real_payment">实付款（含运费）</string>
+    <string name="delete_order">删除订单</string>
+    <string name="cancellation_order">取消订单</string>
+    <string name="payment">付款</string>
+    <string name="confirmation_order">确认订单</string>
+    <string name="place_order">提交订单</string>
+    <string name="choice_payment_method">选择支付方式</string>
+    <string name="alipay">支付宝支付</string>
+    <string name="wechatpay">微信支付</string>
+    <string name="need_pay">还需支付：</string>
+    <string name="confirmation_pay">确认支付</string>
+    <string name="payment_success">支付成功</string>
+    <string name="back_order">返回订单</string>
+    <string name="back_home">返回主页</string>
+    <string name="add2cart_success">已加入购物车</string>
+    <string name="shopping_cart">购物车</string>
+    <string name="go_balance_accounts">去结算</string>
+    <string name="subtotal">小计:</string>
+
+    <!-- 设备 -->
+    <string name="buy">购买</string>
+    <string name="search_blue_tooth">搜索蓝牙</string>
+
+    <string name="i_got_it">我知道了</string>
+    <string name="fetal_heart_rate_abnormality">胎心率异常</string>
+    <string name="fetal_movement_abnormality">胎动异常</string>
+    <string name="monitoring">正在监测</string>
+    <string name="fetal_heart_rate">胎心率</string>
+    <string name="fetal_movement_number">胎动数</string>
+    <string name="real_time_data">胎心检测实时数据</string>
+    <string name="historical_data">胎动检测历史数据</string>
+    <string name="frequency">次数</string>
+
+    <string name="intermediate_frequency">中频</string>
+    <string name="middle_high_frequency">中高频</string>
+    <string name="high_frequency">高频</string>
+    <string name="low_frequency">低频</string>
+    <string name="middle_low_frequency">中低频</string>
+
+    <!-- 咨询 -->
+    <string name="tips_not_doctor">亲！没有医生哦</string>
+    <string name="click_add">点击“+”添加</string>
+    <string name="consulting_record">咨询记录</string>
+    <string name="no_content">暂无内容！</string>
+    <string name="add_doctor">添加医生</string>
+    <string name="ed_doctor_name">输入医生姓名</string>
+    <string name="New_pediatric">新生儿科</string>
+    <string name="The_comprehensive_sequencing">综合排序</string>
+    <string name="Consulting_type">咨询类型</string>
+    <string name="Did_not_open">未开通</string>
+    <string name="Did_open">已开通</string>
+    <string name="minute">分</string>
+    <string name="one_pic_zixun">1次图文咨询</string>
+<string name="Immediately_consult">立即咨询</string>
+
+    <!--医疗包-->
+   <string name="Service_doctor">服务医生：</string>
+    <string name="Service_type">服务类型：</string>
+    <string name="Contains_consulting">包含咨询：</string>
+    <string name="Prepaid_phone_plans">充值套餐：</string>
+    <string name="one_month">1个月</string>
+    <string name="three_month">3个月</string>
+    <string name="one_year">1年</string>
+
+
+
+
+
+    <!-- 数据 -->
+    <string name="fetal_heart1">胎心</string>
+    <string name="unmeasured">未测量</string>
+    <string name="add_fetal_heart">添加胎心</string>
+    <string name="open_device_switch">开启设备开关</string>
+
+    <!-- 我的 -->
+    <string name="my_order">我的订单</string>
+    <string name="all_order">查看全部订单</string>
+    <string name="prenatal_chart">产检登记表</string>
+    <string name="vaccine_chart">疫苗登记表</string>
+    <string name="baby_info">宝贝情况</string>
+    <string name="exclusive_doctor">专属医生</string>
+    <string name="notice_bulletin">通知公告</string>
+    <string name="contact_us">联系我们</string>
+    <string name="about_us">关于我们</string>
+
+    <!-- 个人中心 -->
+    <string name="personal_center">个人中心</string>
+    <string name="full_name">姓名</string>
+    <string name="head_img">头像</string>
+    <string name="birthday">生日</string>
+    <string name="logout">退出登录</string>
+
+
+    <!-- 联系我们 -->
+    <string name="information_feedback">信息反馈:</string>
+    <string name="input_feedback_tips">输入您的宝贵意见</string>
+
+    <!-- 产检登记表 and 疫苗登记表 -->
+    <string name="registration_production_inspection">产检登记表</string>
+
+    <!-- 我的订单 -->
+    <string name="orders_text_ordernumber">订单编号:</string>
+    <string name="orders_title_all">全部</string>
+    <string name="orders_title_nopay">待付款</string>
+    <string name="orders_title_noship">待发货</string>
+    <string name="orders_title_noreceipt">待收货</string>
+    <string name="orders_title_receipted">已收货</string>
+
+    <!-- 订单详情 -->
+    <string name="order_details">订单详情</string>
+    <string name="deletion_order">确定删除订单？</string>
+    <string name="look_logistics">查看物流</string>
+    <string name="logistics">物流详情</string>
+    <string name="logistics_company">物流公司:</string>
+    <string name="logistics_code">物流编号:</string>
+    <string name="logistics_phone">物流电话:</string>
+
+    <!--个人信息设置-->
+    <string name="The_baby_already_born">宝宝已经出生</string>
+    <string name="Please_select_the_time">请选择时间</string>
+    <string name="Select_city">选择城市</string>
+    <string name="Detailed_address">详细地址:</string>
+    <string name="NO_adress_null">地址不能为空</string>
+    <string name="Please_insert_memory_card">请插入内存卡</string>
+     <string name="atlas">从手机选择</string>
+     <string name="camera">拍照</string>
+    <string name="loginout">确定退出登录？</string>
+    <string name="tui">退出</string>
+    <string name="exit">再按一次退出程序</string>
+
+<!--电话咨询-->
+
+
+    <string name="tishi">25分钟电话咨询</string>
+    <string name="setTimeDuan">选择时间段</string>
+    <string name="O">08:00-10:00</string>
+    <string name="T">10:00-12:00</string>
+    <string name="TH">12:00-14:00</string>
+    <string name="F">14:00-16:00</string>
+    <string name="FI">16:00-18:00</string>
+    <string name="S">18:00-20:00</string>
+    <string name="lijiyuyue">立即预约</string>
+    <string name="review">评测</string>
+
+
+
+</resources>

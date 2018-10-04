@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_skuattribute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数字显示+电池1对（海洋蓝）"
+        android:textColor="@color/title_text_color1"
+        android:textSize="@dimen/text_small"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="@drawable/fourdp_btn_bg_black_shape"/>
+
+</LinearLayout>

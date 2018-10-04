@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+
+    <declare-styleable name="RefreshView">
+        <attr name="type1" format="enum">
+            <enum name="sun" value="0" />
+        </attr>
+
+    </declare-styleable>
+
+    <!-- 加载滚动条样式 -->
+    <style name="loading">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progressloading</item>
+        <item name="android:indeterminateDuration">1000</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+
+    <!--自定义弹窗样式-->
+    <!--<style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>&lt;!&ndash;边框&ndash;&gt;
+        <item name="android:windowIsFloating">true</item>&lt;!&ndash;是否浮现在activity之上&ndash;&gt;
+        <item name="android:windowIsTranslucent">false</item>&lt;!&ndash;半透明&ndash;&gt;
+        <item name="android:windowNoTitle">true</item>&lt;!&ndash;无标题&ndash;&gt;
+        <item name="android:windowBackground">@drawable/half_transparent</item>&lt;!&ndash;背景半透明&ndash;&gt;
+        <item name="android:backgroundDimEnabled">false</item>&lt;!&ndash;模糊&ndash;&gt;
+        <item name="android:windowFullscreen">true</item>
+    </style>-->
+
+    <!-- dialog属性 -->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/none</item>
+        <!-- <item name="android:backgroundDimEnabled">false</item> -->
+    </style>
+
+    <!--菜单弹窗-->
+    <style name="menu_dialog" parent="dialog">
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <item name="android:windowAnimationStyle">@style/menu_dialog_anim_style</item>
+    </style>
+
+    <!--菜单弹窗动画-->
+    <style name="menu_dialog_anim_style">
+        <item name="android:windowEnterAnimation">@anim/menu_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/menu_dialog_out_anim</item>
+    </style>
+
+    <!-- Loding_dialog样式Start -->
+    <style name="Dialog_bocop">
+        <item name="android:windowBackground">@color/bocop_dialog_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <!--Wheel-->
+    <style name="j_timepopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/j_anim_enter_bottom</item> <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/j_anim_exit_bottom</item> <!-- 指定消失的动画xml -->
+    </style>
+
+    <declare-styleable name="androidWheelView">
+        <attr name="awv_textsize" format="integer" />
+        <attr name="awv_lineSpace" format="float" />
+        <attr name="awv_centerTextColor" format="integer" />
+        <attr name="awv_outerTextColor" format="integer" />
+        <attr name="awv_dividerTextColor" format="integer" />
+        <attr name="awv_itemsVisibleCount" format="integer" />
+        <attr name="awv_isLoop" format="boolean" />
+        <attr name="awv_initialPosition" format="integer" />
+        <attr name="awv_scaleX" format="float" />
+    </declare-styleable>
+
+
+
+</resources>

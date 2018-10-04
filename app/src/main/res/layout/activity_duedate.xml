@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#FFF"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textColor="#242424"
+            android:gravity="center"
+            android:text="@string/expected_date_childbirth"
+            />
+
+
+        <TextView
+            android:id="@+id/et_dueDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:maxLength="20"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_userOnClick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginLeft="15dp"
+            android:onClick="etUser"
+            android:gravity="center_vertical"
+            android:visibility="gone"></TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/rili"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_calculation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calculation"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/style_red"
+
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/Lin_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_menstruation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#FFF"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+
+                android:gravity="center"
+                android:text="@string/last_menstruation_date"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_menstruation_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:text="2018-01-01"
+                android:textColor="#242424"
+                android:layout_marginRight="20dp"
+                ></TextView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CDCDCD"
+            ></View>
+        <RelativeLayout
+            android:id="@+id/rl_menstruation_cycle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#FFF"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/menstruation_cycle"
+                />
+
+
+            <com.saiyi.pregnantmother.my.view.LastInputEditText
+                android:id="@+id/et_menstruation_cycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:layout_alignParentRight="true"
+                android:text="25"
+                android:textColor="#242424"
+                android:layout_marginRight="35dp"
+                android:background="@null"
+                android:textSize="14dp"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:maxLength="2"
+                ></com.saiyi.pregnantmother.my.view.LastInputEditText>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="@string/day1"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/user_btn_bg"
+            android:textColor="#FFF"
+            android:text="@string/save"
+
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_The_baby_already_born"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_user_bg_blue"
+        android:textColor="@color/style_blue"
+        android:text="@string/The_baby_already_born"
+        android:gravity="center"
+        />
+
+</LinearLayout>

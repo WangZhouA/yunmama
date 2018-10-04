@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.bingoogolapple:bga-qrcode-core-1.2.1">
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-3.3/caches/transforms-1/files-1.1/bga-qrcode-core-1.2.1.aar/a2b8b5c3c2aa691f33617af52c9758a7/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_HOME_DIR$/gradle/gradle-3.3/caches/transforms-1/files-1.1/bga-qrcode-core-1.2.1.aar/a2b8b5c3c2aa691f33617af52c9758a7/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-3.3/caches/modules-2/files-2.1/cn.bingoogolapple/bga-qrcode-core/1.2.1/6644f8a252b1dbd4665d02803b5f235905783623/bga-qrcode-core-1.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

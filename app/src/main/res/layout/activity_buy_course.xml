@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="24dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/test_ad1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_course_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="婴儿体验班"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/tv_course_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="婴儿保育体验班婴儿保班…"
+                android:maxLength="2"
+                android:ellipsize="end"
+                android:textColor="@color/hint_text_color"
+                android:textSize="@dimen/text_main" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/course_name"
+            android:textColor="@color/title_text_color1"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv1"
+            android:text="婴儿体验班"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tv1"
+            android:layout_below="@+id/tv1"
+            android:layout_marginTop="20dp"
+            android:text="@string/price"
+            android:textColor="@color/title_text_color1"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_course_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_course_name"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:text="￥100.00"
+            android:textColor="@color/style_red"
+            android:textSize="@dimen/text_small" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choice_payment_method"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_small"
+            android:layout_margin="15dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/main_bg"/>
+
+        <LinearLayout
+            android:id="@+id/ll_wechatpay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/zhifu01"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/wechatpay"
+                android:layout_margin="15dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_small"/>
+
+            <CheckBox
+                android:id="@+id/cb_wechatpay"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:checked="false"
+                android:layout_marginRight="15dp"
+                style="@style/pay_checkbox_style"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/main_bg"/>
+
+        <LinearLayout
+            android:id="@+id/ll_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/zhifu02"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/alipay"
+                android:layout_margin="15dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_small"/>
+
+            <CheckBox
+                android:id="@+id/cb_alipay"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:checked="false"
+                android:layout_marginRight="15dp"
+                style="@style/pay_checkbox_style"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/main_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/need_pay"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_small" />
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥100.00"
+                android:textColor="@color/style_red"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_pay"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                style="@style/submit_btn_style"
+                android:enabled="true"
+                android:layout_marginBottom="20dp"
+                android:text="@string/confirmation_pay" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

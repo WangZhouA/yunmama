@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.sunday.common.activity.view.NavBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:backgroundColor="@color/white"
+        app:rightTextSize="16dp"
+        app:rightTxtColor="#FFF"
+        app:titleColor="@color/title_text_color"
+        app:titleSize="18dp" />
+
+    <com.saiyi.pregnantmother.common.view.ListenScrollView
+        android:id="@+id/lsv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_bg"
+            android:orientation="vertical">
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/tl_1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                app:tl_indicator_color="@color/colorAccent"
+                app:tl_indicator_height="2dp"
+                app:tl_indicator_width_equal_title="true"
+                app:tl_tab_space_equal="true"
+                app:tl_textSelectColor="@color/text_color"
+                app:tl_textUnselectColor="@color/text_color"
+                app:tl_textsize="@dimen/text_main" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#EFEFEF" />
+
+            <com.saiyi.pregnantmother.common.view.ViewPagerForScrollView
+                android:id="@+id/vp_baby_grpwth_cycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                app:image_scale_type="fit_xy"
+                app:indicator_drawable_selected="@drawable/selected_radius"
+                app:indicator_drawable_unselected="@drawable/unselected_radius"
+                app:indicator_height="5dp"
+                app:indicator_margin="4dp"
+                app:indicator_width="5dp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_menu"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tl_content"
+                style="@style/tabLayoutTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginTop="10dp"
+                app:tabBackground="@android:color/white"
+                app:tabIndicatorColor="@color/style_blue"
+                app:tabIndicatorHeight="1dp"
+                app:tabSelectedTextColor="@color/text_color"
+                app:tabTextColor="@color/text_color">
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/good_lesson" />
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hot_topic" />
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hot_selling_goods" />
+
+            </android.support.design.widget.TabLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#EFEFEF" />
+
+            <com.saiyi.pregnantmother.common.view.ViewPagerForScrollView
+                android:id="@+id/vp_content_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </com.saiyi.pregnantmother.common.view.ListenScrollView>
+</LinearLayout>

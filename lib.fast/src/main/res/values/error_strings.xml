@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--封装的错误信息都放在这里(英文)-->
+    <!--code-->
+    <string name="code_unknow">Unknown state</string>
+    <string name="code1">The phone number or mailbox has been registered</string>
+    <string name="code2">The phone number or mailbox hasn\'t been registered</string>
+    <string name="code3">The phone number or mailbox has been registered</string>
+    <string name="code4">Send verification code successfully</string>
+    <string name="code5">Failed to send verification code</string>
+    <string name="code6">Your phone or email\'s format is incorrect </string>
+    <string name="code7">User does not exist</string>
+    <string name="code8">Wrong password</string>
+    <string name="code9">Login successful</string>
+    <string name="code10">Phone or email cannot be empty</string>
+    <string name="code11">Please enter your password</string>
+    <string name="code12">Please enter verification code</string>
+    <string name="code13">User registered</string>
+    <string name="code14">User is not registered</string>
+    <string name="code15">Verification code error</string>
+    <string name="code16">Registration success</string>
+    <string name="code17">Retrieve password successfully</string>
+    <string name="code18">Upload failed</string>
+    <string name="code19">Uploaded successfully</string>
+    <string name="code20">Old password wrong</string>
+    <string name="code21">Fail to edit</string>
+    <string name="code22">Successfully modified</string>
+    <string name="code23">No data</string>
+    <string name="code24">Query was successful</string>
+    <string name="code25">Record cannot be empty</string>
+    <string name="code26">Failed to delete</string>
+    <string name="code27">Successfully deleted</string>
+    <string name="code28">Feedback failed</string>
+    <string name="code29">Feedback success</string>
+    <string name="code30">Device binding failed</string>
+    <string name="code31">Device is bound</string>
+    <string name="code32">The administrator password is incorrect</string>
+    <string name="code33">Failed to delete device</string>
+    <string name="code34">Added successfully</string>
+    <string name="code35">The phone number is not registered</string>
+    <string name="code36">Added key to the user</string>
+    <string name="code37">Add failed</string>
+    <string name="code38">The device key has exceeded 40</string>
+    <string name="code39">Keyboard key already exists</string>
+
+    <!--http error-->
+    <string name="UNKNOW">Unknown exception</string>
+    <string name="PARSE_ERROR">Data analysis exception</string>
+    <string name="NETWORD_ERROR">Network connection is abnormal</string>
+    <string name="HTTP_ERROR">Request exception</string>
+    <string name="SSL_ERROR">Https authentication exception</string>
+    <string name="PARAMS_ERROR">Parameter error</string>
+    <string name="SMS_IDENTIFY_ERROR">Verification code extraction failed</string>
+    <string name="SERVICE_RESULT_ERROR">Server returned error</string>
+    <string name="UNKNOW_HOST_ERROR">No server found</string>
+
+
+    <!--db error-->
+    <string name="UserSaveError">User login failed</string>
+
+</resources>

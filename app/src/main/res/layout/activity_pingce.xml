@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/head_img"
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刘海燕"
+                android:layout_gravity="center"
+                android:textColor="#242424"
+                />
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="医生态度如何"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:id="@+id/img_one"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:src="@drawable/star02"
+            />
+        <ImageView
+            android:id="@+id/img_two"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:src="@drawable/star02"
+            />
+        <ImageView
+            android:id="@+id/img_three"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:src="@drawable/star02"
+            />
+        <ImageView
+            android:id="@+id/img_four"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:src="@drawable/star02"
+            />
+        <ImageView
+            android:id="@+id/img_five"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:src="@drawable/star02"
+            />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="非常好"
+        android:textSize="16dp"
+        android:textColor="#242424"
+
+        />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_pay"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        style="@style/submit_btn_style"
+        android:enabled="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/sbumit"
+        android:layout_marginBottom="20dp"
+        />
+
+</LinearLayout>

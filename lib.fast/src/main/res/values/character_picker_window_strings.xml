@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Wheel-->
+    <string name="j_pickerview_cancel">cancel</string>
+    <string name="j_pickerview_submit">certain</string>
+</resources>

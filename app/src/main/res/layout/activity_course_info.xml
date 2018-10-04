@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/test_ad1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="宝宝腹泻高峰期，家长千万不要忽略以下几点！"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_middle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="￥100.00"
+                    android:textColor="@color/style_red"
+                    android:textSize="@dimen/text_small" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/kan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:text="1185"
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="@dimen/text_main" />
+
+                <ImageView
+                    android:id="@+id/iv_likes"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/zan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="488"
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="@dimen/text_main" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="宝宝出生后一切正常。可是3－5天后，宝宝的脸了，而且有越来越黄的趋势。这就是新生儿的生理性黄疸。这是由于，胎儿在子宫内靠妈妈供给营养，他生长发育代谢后产生的废物也由妈妈的脏器帮助排泄出来，胎儿体内衰老的红细胞“寿终正寝”后，产生的胆红素就是这样由妈妈的肝脏帮助转化排泄的。"
+                android:textColor="@color/title_text_color1"
+                android:lineSpacingExtra="5dp"
+                android:textSize="@dimen/text_small" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/test_ad1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所以宝宝出生时并没有黄疸。婴儿出生后，与母亲脱离了联系，他的一切新陈代谢产物也就由自己来处理了。红细胞破坏后产生的胆红素要经过肝脏转化一下，才能从体内排泄出去。而这时新生儿的肝脏处理胆红素的能力是很弱的。胆红素就不能从正常的渠道排泄到体外，多余的没有经过肝脏处理的间接胆红素蓄积在体内。到了一定的程度，孩子就表现出黄疸。随着肝脏功能的逐渐成熟，新生儿黄疸会逐渐消退。一般在一周到半个月的时间黄疸就会退尽。"
+                android:textColor="@color/title_text_color1"
+                android:lineSpacingExtra="5dp"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

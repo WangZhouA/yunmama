@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#FFF"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/full_name"
+            android:layout_marginLeft="10dp"
+            android:textColor="#242424"
+            android:gravity="center"
+            />
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginLeft="15dp"
+            android:maxLength="20"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_userOnClick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginLeft="15dp"
+            android:onClick="etUser"
+            android:gravity="center_vertical"
+            android:visibility="gone"></TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CDCDCD"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        ></View>
+
+    <LinearLayout
+        android:id="@+id/Linadress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#FFF"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/tv_Detailed_address"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/Detailed_address"
+            android:layout_marginLeft="10dp"
+            android:textColor="#242424"
+            android:gravity="center"
+            />
+
+
+        <com.saiyi.pregnantmother.my.view.LastInputEditText
+            android:id="@+id/et_Detailed_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginLeft="15dp"
+            android:maxLength="50"
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

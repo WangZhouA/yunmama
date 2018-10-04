@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="140dp"
+       android:background="@color/white"
+       android:orientation="horizontal">
+       
+       <View
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"/>
+       <LinearLayout
+           android:id="@+id/ll_fetal_heart"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           
+           <ImageView
+               android:layout_width="40dp"
+               android:layout_height="38dp"
+               android:layout_marginTop="26dp"
+               android:src="@drawable/taixinicon"/>
+           
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/fetal_heart_rate"
+               android:textColor="@color/title_text_color1"
+               android:layout_marginTop="17dp"
+               android:textSize="@dimen/text_main"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="170"
+               android:textColor="@color/text_color"
+               android:textSize="@dimen/text_small"
+               android:layout_marginTop="6dp"/>
+           
+       </LinearLayout>
+       <View
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"/>
+
+       <LinearLayout
+           android:id="@+id/ll_fetal_movement"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="40dp"
+               android:layout_height="38dp"
+               android:layout_marginTop="26dp"
+               android:src="@drawable/taidong"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/fetal_movement_number"
+               android:textColor="@color/title_text_color1"
+               android:layout_marginTop="17dp"
+               android:textSize="@dimen/text_main"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="请输入"
+               android:textColor="@color/hint_text_color"
+               android:textSize="@dimen/text_main"
+               android:layout_marginTop="6dp"/>
+
+       </LinearLayout>
+       <View
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"/>
+   </LinearLayout>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tl_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        tl:tl_indicator_color="@color/style_blue"
+        tl:tl_indicator_height="1dp"
+        tl:tl_indicator_width_equal_title="true"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/text_color"
+        tl:tl_textUnselectColor="@color/text_color"
+        tl:tl_textsize="@dimen/text_small" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#EFEFEF" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_data"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

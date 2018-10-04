@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lin_list"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/im_back_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back"
+
+            />
+
+        <EditText
+            android:id="@+id/et_list"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/et_bg"
+            android:drawableLeft="@drawable/sousuo"
+            android:paddingLeft="10dp"
+            android:hint="@string/ed_doctor_name"
+            android:drawablePadding="10dp"
+            />
+
+    </LinearLayout>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tl_1"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        tl:tl_indicator_color="@color/colorAccent"
+        tl:tl_indicator_height="2dp"
+        tl:tl_indicator_width_equal_title="true"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/colorAccent"
+        tl:tl_textUnselectColor="@color/title_text_color1"
+        tl:tl_textsize="@dimen/text_main" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#EFEFEF" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_doctor_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+        <LinearLayout
+        android:id="@+id/lin_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#9902262C"
+        android:layout_alignParentBottom="true"
+            android:visibility="gone"
+        >
+
+          <RelativeLayout
+              android:id="@+id/rl_dingwei"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              >
+              <TextView
+                  android:paddingTop="5dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:drawableTop="@drawable/dingwei"
+                  android:text="深圳"
+                  android:layout_centerInParent="true"
+                  android:textColor="#FFF"
+                  android:drawablePadding="5dp"
+
+                  />
+
+          </RelativeLayout>
+          <RelativeLayout
+              android:id="@+id/rl_New_pediatric"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              >
+              <TextView
+                  android:paddingTop="5dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:drawableTop="@drawable/dingwei02"
+                  android:text="@string/New_pediatric"
+                  android:textColor="#FFF"
+                  android:layout_centerInParent="true"
+                  android:drawablePadding="5dp"
+
+                  />
+
+          </RelativeLayout>
+          <RelativeLayout
+              android:id="@+id/rl_The_comprehensive_sequencing"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              >
+              <TextView
+                  android:paddingTop="5dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:drawableTop="@drawable/dingwei03"
+                  android:text="@string/The_comprehensive_sequencing"
+                  android:textColor="#FFF"
+                  android:layout_centerInParent="true"
+                  android:drawablePadding="5dp"
+
+                  />
+
+          </RelativeLayout>
+          <RelativeLayout
+              android:id="@+id/rl_Consulting_type"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              >
+              <TextView
+                  android:paddingTop="5dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:drawableTop="@drawable/dingwei04"
+                  android:text="@string/Consulting_type"
+                  android:textColor="#FFF"
+                  android:layout_centerInParent="true"
+                  android:drawablePadding="5dp"
+
+                  />
+
+          </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

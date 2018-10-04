@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_frequency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:id="@+id/tv_intermediate_frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/intermediate_frequency"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/text_small" />
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="177dp"
+            android:layout_height="94dp"
+            android:layout_below="@+id/tv_intermediate_frequency"
+            android:layout_centerInParent="true"
+            android:paddingBottom="8dp"
+            android:src="@drawable/fangyutu" />
+
+        <TextView
+            android:id="@+id/tv_low_frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_img"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/iv_img"
+            android:text="@string/low_frequency"
+            android:textColor="@color/style_blue"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_high_frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_img"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/iv_img"
+            android:text="@string/high_frequency"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_middle_low_frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_intermediate_frequency"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/tv_intermediate_frequency"
+            android:text="@string/middle_low_frequency"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_middle_high_frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_intermediate_frequency"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_intermediate_frequency"
+            android:text="@string/middle_high_frequency"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/text_small" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_frequency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <RadioButton
+            android:id="@+id/rb_low_frequency"
+            style="@style/fangyuntu_style"
+            android:checked="true"
+            android:text="@string/low_frequency" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/rb_middle_low_frequency"
+            style="@style/fangyuntu_style"
+            android:text="@string/middle_low_frequency" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/rb_intermediate_frequency"
+            style="@style/fangyuntu_style"
+            android:text="@string/intermediate_frequency" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/rb_middle_high_frequency"
+            style="@style/fangyuntu_style"
+            android:text="@string/middle_high_frequency" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/rb_high_frequency"
+            style="@style/fangyuntu_style"
+            android:text="@string/high_frequency" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small"
+            android:text="@string/open_device_switch"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/text_color"/>
+
+        <CheckBox
+            android:id="@+id/cb_dev_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/switch_style"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Service_doctor"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刘海红"
+                android:textSize="15dp"
+                android:textColor="#242424"
+                android:layout_marginLeft="20dp"
+                />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Service_type"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="医疗包"
+                android:textSize="15dp"
+                android:textColor="#242424"
+                android:layout_marginLeft="20dp"
+                />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Contains_consulting"></TextView>
+            <TextView
+                android:id="@+id/Service_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="聊天咨询、图片咨询、语音咨询"
+                android:textSize="15dp"
+                android:textColor="#242424"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Prepaid_phone_plans"
+            />
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/lin_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/tc_bg">
+
+                <TextView
+                    android:id="@+id/tv_one_month"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/one_month"
+                    android:gravity="center"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_one_month_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="￥159.00"
+                    android:gravity="center"
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                ></View>
+
+            <LinearLayout
+                android:id="@+id/lin_three"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/tc_bg">
+                <TextView
+                    android:id="@+id/tv_three_month"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/three_month"
+                    android:gravity="center"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_three_month_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="￥159.00"
+                    android:gravity="center"
+
+                    />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                ></View>
+            <LinearLayout
+                android:id="@+id/lin_oneYear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tc_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_one_year"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/one_year"
+                    android:gravity="center"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_one_year_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="￥159.00"
+                    android:gravity="center"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choice_payment_method"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_small"
+            android:layout_margin="15dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/main_bg"/>
+
+        <LinearLayout
+            android:id="@+id/ll_wechatpay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/zhifu01"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/wechatpay"
+                android:layout_margin="15dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_small"/>
+
+            <CheckBox
+                android:id="@+id/cb_wechatpay"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:checked="false"
+                android:layout_marginRight="15dp"
+                style="@style/pay_checkbox_style"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/main_bg"/>
+
+        <LinearLayout
+            android:id="@+id/ll_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/zhifu02"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/alipay"
+                android:layout_margin="15dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_small"/>
+
+            <CheckBox
+                android:id="@+id/cb_alipay"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:checked="false"
+                android:layout_marginRight="15dp"
+                style="@style/pay_checkbox_style"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/main_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/need_pay"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_small" />
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥100.00"
+                android:textColor="@color/style_red"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_pay"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                style="@style/submit_btn_style"
+                android:enabled="true"
+                android:layout_marginBottom="20dp"
+                android:text="@string/confirmation_pay" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
